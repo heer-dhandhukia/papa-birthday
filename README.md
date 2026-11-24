@@ -24,17 +24,17 @@ Edit **`data/content.js`**. It is the central content file and includes:
 - `letter`: the complete letter text
 - `bucketList`: starting list of shared experiences
 - `finalMessage`, `finalPhoto`
-- `music` and `voiceNote` optional audio paths
+- family photo paths and the written birthday messages
 
 The supplied images are in `assets/photos/`. Replace any image by putting your photo in that folder and updating its relative path in `data/content.js`. The captions are gentle general sentiments, not asserted dates or specific events; edit them to reflect your real memories. Dates are blank until you add them.
 
 ### Add optional audio
 
-Place an audio file (for example `birthday-song.mp3`) in `assets/`, then set `music: "assets/birthday-song.mp3"`. Music starts only after Papa taps the visible music control. For a recorded message set `voiceNote: "assets/papa-message.mp3"`. Keep audio files reasonably compressed for mobile.
+Place an audio file (for example `birthday-song.mp3`) in `assets/`, then set ``. Music starts only after Papa taps the visible music control. 
 
 ### Change names and birthday
 
-Set `fatherName`, `daughterName` and `birthday` near the top of `data/content.js`. `fatherName` is currently “Papa” and the daughter’s name and birthday are intentionally left as editable placeholders.
+Set `fatherName`, `daughterName` and `birthday` near the top of `data/content.js`. `fatherName` is currently “Papa” and the daughter’s name is set to “Your Heero”; the birthday is optional.
 
 ## Pages
 
@@ -44,7 +44,7 @@ Set `fatherName`, `daughterName` and `birthday` near the top of `data/content.js
 4. `reasons.html` — 50 interactive reasons
 5. `letter.html` — typewriter letter
 6. `bucket-list.html` — persistent checkboxes and custom entries
-7. `final.html` — final message, voice-note player and celebration
+7. `final.html` — final message and celebration
 
 Each page is a real HTML file, so it works on GitHub Pages without SPA routing or rewrite rules. Links and asset paths are relative.
 
@@ -80,8 +80,8 @@ GitHub Pages provides HTTPS. This project uses no backend, API keys or paid serv
 
 ## Before sharing
 
-- Replace `Your little girl` with your name.
+- The sign-off is “Your Heero”.
 - Add Papa’s birthday date if desired.
 - Review every caption and the letter so they sound like you.
-- Add an optional voice note or favourite song.
+
 - Deploy, then test the published URL on a phone.
